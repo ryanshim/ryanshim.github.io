@@ -17,19 +17,21 @@
 
   <body id="trgt-main">
     <!-- MAIN HEADER / NAVBAR -->
-    <nav class="navbar navbar-dark navbar-fixed-top" id="navbar-id">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <h3>{{ page.title }}</h3>
+    <div class="container">
+      <nav class="navbar navbar-dark navbar-fixed-top" id="navbar-id">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h3>{{ page.title }}</h3>
+          </div>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <button id="main-btn" type="button" class="btn btn-default">Top</button>
+            <button id="prj-btn" type="button" class="btn btn-default">Projects</button>
+            <button id="contact-btn" type="button" class="btn btn-default">Contact</button>
+          </ul>
         </div>
-        
-        <ul class="nav navbar-nav navbar-right">
-          <button id="main-btn" type="button" class="btn btn-default">Top</button>
-          <button id="prj-btn" type="button" class="btn btn-default">Projects</button>
-          <button id="contact-btn" type="button" class="btn btn-default">Contact</button>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- MAIN CONTAINER -->
     <div class="container">
