@@ -2,4 +2,8 @@
 layout: default
 title: RYAN SHIM
 ---
-
+<ul>
+  {% for text in site.text %}
+    <p>{{ text }}</p>
+  {% endfor %}
+</ul>
