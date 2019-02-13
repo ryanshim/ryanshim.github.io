@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- FONT IMPORT -->
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- CUSTOM STYLESHEET -->
+  <link rel="stylesheet" href="/static/css/main_styles.css">
+
+  <head>
+    <title>{{ page.title }}</title>
+  </head>
+
+  <body id="trgt-main">
+    <!-- MAIN HEADER / NAVBAR -->
+    <nav class="navbar navbar-dark navbar-fixed-top" id="navbar-id">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <h3>{{ title_main }}</h3>
+        </div>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <button id="main-btn" type="button" class="btn btn-default">Top</button>
+          <button id="prj-btn" type="button" class="btn btn-default">Projects</button>
+          <button id="contact-btn" type="button" class="btn btn-default">Contact</button>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+      {{ content }}
+    </div>
+
+  </body>
+
+</html>
