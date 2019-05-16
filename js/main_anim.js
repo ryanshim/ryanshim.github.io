@@ -9,7 +9,7 @@ $(document).ready(function() {
     }, 600);
   });
 
-  $("#edu-btn").click(function() {scroll("target-edu");});
+  $("#edu-btn").click(function() {scroll("target-edu", nav_height);});
 
   /*
   $("#edu-btn").click(function() {
@@ -42,8 +42,8 @@ $(document).ready(function() {
   });
 });
 
-function scroll(target) {
-  var scroll_pos = $(target).offset().top - nav_height;
+function scroll(target, nheight) {
+  var scroll_pos = $(target).offset().top - nheight;
   $('html, body').animate({
     scrollTop: scroll_pos
   }, 600);
