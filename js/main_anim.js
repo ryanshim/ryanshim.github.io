@@ -43,6 +43,8 @@ $(document).ready(function() {
 });
 
 function scroll(target, nheight) {
+  console.log(target);
+  console.log(nheight);
   var scroll_pos = $(target).offset().top - nheight;
   $('html, body').animate({
     scrollTop: scroll_pos
