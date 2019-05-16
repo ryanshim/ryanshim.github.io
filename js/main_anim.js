@@ -1,12 +1,14 @@
-function scroll(target) {
-  var scroll_pos = $(target).offset().top - nav_height;
-  $('html, body').animate({
-    scrollTop: scroll_pos
-  }, 600);
-}
+
 
 $(document).ready(function() {
   var nav_height = $("nav").height();
+
+  function scroll(target) {
+    var scroll_pos = $(target).offset().top - nav_height;
+    $('html, body').animate({
+      scrollTop: scroll_pos
+    }, 600);
+  }
 
   $("#main-btn").click(function() {
     var scroll_pos = $("#trgt-main").offset().top - nav_height;
